@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="resources/jquery/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	init();
+});
+
+function init(){
+	$("#btn_test").bind("click", function(){
+		alert("완료");
+	});
+}
+
+</script>
+<title>Welcome</title>
+</head>
+<body>
+<div>
+	<span class="btn">리스트</span>
+	<span class="btn">글쓰기</span>
+</div>
+<div style="display: none;">
+	<button id="btn_test">resource 검사</button>
+	<p>HTML file is ready. ${serverTime}</p>
+</div>
+
+</body>
+</html>
